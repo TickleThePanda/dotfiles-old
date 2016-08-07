@@ -16,3 +16,4 @@ ln -sfv "$DOTFILES_DIR/runcom/prompt" ~/.prompt
 
 ln -sfv "$DOTFILES_DIR/Xresources/Xresources" ~/.Xresources
 
+ln -sfv "$DOTFILES_DIR/config/awesome" ~/.config/
