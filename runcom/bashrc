@@ -9,3 +9,7 @@ fi
 if [ -f ~/.env ]; then
   . ~/.env
 fi
+
+if [ -f ~/.git-completion ]; then
+  . ~/.git-completion
+fi

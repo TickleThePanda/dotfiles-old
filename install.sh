@@ -6,6 +6,8 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 git clone git@github.com:magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
+wget -O ~/.git-completion https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+
 # linking files
 
 ln -sfv "$DOTFILES_DIR/runcom/bash_aliases" ~/.bash_aliases
