@@ -4,7 +4,6 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # install prerequisites
 
-
 git clone git@github.com:magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
