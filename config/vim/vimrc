@@ -1,4 +1,14 @@
-filetype indent plugin on
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'https://github.com/PProvost/vim-ps1.git'
+call vundle#end()
+filetype plugin indent on
 
 syntax on
 
@@ -38,7 +48,7 @@ set notimeout ttimeout ttimeoutlen=200
 
 set pastetoggle=<F11>
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
