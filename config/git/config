@@ -1,0 +1,28 @@
+[user]
+  name = Thomas 'Panda' Attwood | TickleThePanda
+[alias]
+  branch-name = !git rev-parse --abbrev-ref HEAD
+  publish = !git push -u origin $(git branch-name)
+  new = !sh -c \"git fetch -p && git checkout -b \"$1_$2\" remotes/origin/master\"
+  exclude = !sh -c \"echo \"$1\" >> $(git rev-parse --show-cdup).git/info/exclude\" -
+  last = log -1 HEAD
+  delete-merged = "!git checkout master && git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d || echo \"no branches\""
+  unbugger = reset --hard HEAD
+  s = status
+  cob = checkout -b
+  a = add
+  co = checkout
+  ci = commit
+  d = diff
+  find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
+  show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
+  list-detached-commits = "!git fsck --lost-found | grep commit | awk '{print $3}' | xargs -I \"{}\" git --no-pager show -s --format=\"%aI - %H - %s\" \"{}\" | sort"
+[core]
+  autocrlf = true
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[push]
+  default = current
+

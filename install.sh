@@ -20,8 +20,10 @@ ln -sfv "$DOTFILES_DIR/runcom/prompt" ~/.prompt
 
 ln -sfv "$DOTFILES_DIR/Xresources/Xresources" ~/.Xresources
 
-mkdir "$DOTFILES_DIR/.config"
+mkdir ~/.config
 
 ln -sfv "$DOTFILES_DIR/config/awesome" ~/.config/
 
 ln -sfv "$DOTFILES_DIR/config/vim/vimrc" ~/.vimrc
+ln -sfv "$DOTFILES_DIR/config/git" ~/.config/
+
