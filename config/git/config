@@ -18,7 +18,7 @@
   show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
   list-detached-commits = "!git fsck --lost-found | grep commit | awk '{print $3}' | xargs -I \"{}\" git --no-pager show -s --format=\"%aI - %H - %s\" \"{}\" | sort"
 [core]
-  autocrlf = true
+	autocrlf = false
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
