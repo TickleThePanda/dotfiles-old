@@ -10,6 +10,12 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 wget -O ~/.git-completion https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
+(
+  cd $DOTFILES_DIR
+  git pull --recurse-submodules
+  git submodule update --recursive --remote
+)
+
 # linking files
 
 ln -sfv "$DOTFILES_DIR/runcom/bash_aliases" ~/.bash_aliases
@@ -27,3 +33,4 @@ ln -sfv "$DOTFILES_DIR/config/awesome" ~/.config/
 ln -sfv "$DOTFILES_DIR/config/vim/vimrc" ~/.vimrc
 ln -sfv "$DOTFILES_DIR/config/git" ~/.config/
 
+vim +PluginInstall +qall
