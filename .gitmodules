@@ -3,7 +3,7 @@
 	url = git@github.com:plotnikovanton/net_widgets.git
 [submodule "config/awesome/themes/awesome-solarized"]
 	path = config/awesome/themes/awesome-solarized
-	url = git@github.com:cycojesus/awesome-solarized.git
+	url = git@github.com:ticklethepanda/awesome-solarized.git
 [submodule "fonts"]
 	path = fonts
 	url = https://github.com/powerline/fonts
