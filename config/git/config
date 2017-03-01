@@ -7,7 +7,8 @@
   new = !sh -c \"git fetch -p && git checkout -b \"$1_$2\" remotes/origin/master\"
   exclude = !sh -c \"echo \"$1\" >> $(git rev-parse --show-cdup).git/info/exclude\" -
   last = log -1 HEAD
-  delete-merged = "!git checkout master && git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d || echo \"no branches\""
+  cleanup = "!git delete-merged && git remote prune origin"
+  delete-merged = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d || echo \"no branches\""
   unbugger = reset --hard HEAD
   s = status
   cob = checkout -b
