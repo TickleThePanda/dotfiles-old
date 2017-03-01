@@ -20,9 +20,6 @@
   show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
   list-detached-commits = "!git fsck --lost-found | grep commit | awk '{print $3}' | xargs -I \"{}\" git --no-pager show -s --format=\"%aI - %H - %s\" \"{}\" | sort"
   exclude = !sh -c \"echo \"$1\" >> $(git rev-parse --show-cdup).git/info/exclude\" -
-  
-  publish = !git push -u origin $(git branch-name)
-  new = !sh -c \"git fetch -p && git checkout -b \"$1_$2\" remotes/origin/master\"
 
 [core]
   autocrlf = true
