@@ -23,7 +23,9 @@
   exclude = !sh -c \"echo \"$1\" >> $(git rev-parse --show-cdup).git/info/exclude\" -
 
 [core]
+  autocrlf = input
   hooksPath = ~/.gitconfig.d/hooks
+  whitespace = blank-at-eol,blank-at-eof,space-before-tab,indent-with-none-tab,tab-in-indent
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
