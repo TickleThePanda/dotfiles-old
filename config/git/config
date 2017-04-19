@@ -1,5 +1,6 @@
 [user]
   name = Thomas 'Panda' Attwood | TickleThePanda
+  email = thomas.pg.attwood@gmail.com
 [alias]
   # ---- shorthand ----
   s = status
@@ -22,7 +23,6 @@
   exclude = !sh -c \"echo \"$1\" >> $(git rev-parse --show-cdup).git/info/exclude\" -
 
 [core]
-  autocrlf = true
   hooksPath = ~/.gitconfig.d/hooks
 [filter "lfs"]
   clean = git-lfs clean %f
