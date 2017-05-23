@@ -2,3 +2,4 @@ export HISTTIMEFORMAT="%Y-%m-%dT%T "
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+

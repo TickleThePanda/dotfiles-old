@@ -1,15 +1,23 @@
 [[ $- == *i* ]] || return
 
-if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
+if [ -f ~/.bash-alias ]; then
+  . ~/.bash-alias
 fi
 
-if [ -f ~/.prompt ]; then
-  . ~/.prompt
+if [ -f ~/.bash-prompt ]; then
+  . ~/.bash-prompt
 fi
 
-if [ -f ~/.env ]; then
-  . ~/.env
+if [ -f ~/.bash-env ]; then
+  . ~/.bash-env
+fi
+
+if [ -f ~/.bash-env-local ]; then
+  . ~/.bash-env-local
+fi
+
+if [ -f ~/.bash-alias-local ]; then
+  . ~/.bash-alias-local
 fi
 
 if [ -f ~/.git-completion ]; then
@@ -20,3 +28,4 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval `ssh-agent -s`
   ssh-add
 fi
+
