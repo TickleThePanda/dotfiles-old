@@ -31,6 +31,9 @@ mkdir ~/.config
 ln -sfv "$DOTFILES_DIR/config/awesome" ~/.config/
 
 ln -sfv "$DOTFILES_DIR/config/vim/vimrc" ~/.vimrc
+mkdir ~/.vim/undo
+
 ln -sfv "$DOTFILES_DIR/config/git" ~/.config/
 
-vim +PluginInstall +qall
+ivim +PluginInstall +qall
+
