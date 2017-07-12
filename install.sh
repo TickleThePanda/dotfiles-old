@@ -35,5 +35,5 @@ mkdir ~/.vim/undo
 
 ln -sfv "$DOTFILES_DIR/config/git" ~/.config/
 
-ivim +PluginInstall +qall
+vim +PluginInstall +qall
 
