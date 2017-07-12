@@ -23,12 +23,14 @@ ln -sfv "$DOTFILES_DIR/runcom/bash_profile" ~/.bash_profile
 ln -sfv "$DOTFILES_DIR/runcom/bashrc" ~/.bashrc
 ln -sfv "$DOTFILES_DIR/runcom/env" ~/.env
 ln -sfv "$DOTFILES_DIR/runcom/prompt" ~/.prompt
+ln -sfv "$DOTFILES_DIR/runcom/profile" ~/.profile
 
 ln -sfv "$DOTFILES_DIR/Xresources/Xresources" ~/.Xresources
 
 mkdir ~/.config
 
 ln -sfv "$DOTFILES_DIR/config/awesome" ~/.config/
+ln -sfv "$DOTFILES_DIR/config/tty-solarized" ~/.config/
 
 ln -sfv "$DOTFILES_DIR/config/vim/vimrc" ~/.vimrc
 mkdir ~/.vim/undo

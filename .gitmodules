@@ -7,3 +7,6 @@
 [submodule "fonts"]
 	path = fonts
 	url = https://github.com/powerline/fonts
+[submodule "config/tty-solarized"]
+	path = config/tty-solarized
+	url = git@github.com:/joepvd/tty-solarized

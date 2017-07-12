@@ -16,6 +16,10 @@ if [ -f ~/.git-completion ]; then
   . ~/.git-completion
 fi
 
+if [ -f ~/.config/tty-solarized/tty-solarized-dark.sh ]; then
+   source ~/.config/tty-solarized/tty-solarized-dark.sh
+fi
+
 if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval `ssh-agent -s`
   ssh-add
