@@ -29,3 +29,6 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
   ssh-add
 fi
 
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
+

@@ -1,6 +1,3 @@
 alias g='git'
 alias work='ssh panda@d.ticklethepanda.co.uk -t "tmux attach || tmux new-session"'
-alias get-home='gmtft -o "OX11 0QX" -d "8 Foudry Close, OX11 7TP" -t transit'
-
-alias asadmin-exe='cmd.exe /c "C:\\payara41\\bin\\asadmin.bat"'
 
