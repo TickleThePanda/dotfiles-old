@@ -1,22 +1,22 @@
 [[ $- == *i* ]] || return
 
-if [ -f ~/.bash-alias ]; then
-  . ~/.bash-alias
+if [ -f ~/.bash_alias ]; then
+  . ~/.bash_alias
 fi
 
-if [ -f ~/.bash-prompt ]; then
-  . ~/.bash-prompt
+if [ -f ~/.bash_prompt ]; then
+  . ~/.bash_prompt
 fi
 
-if [ -f ~/.bash-env ]; then
-  . ~/.bash-env
+if [ -f ~/.bash_env ]; then
+  . ~/.bash_env
 fi
 
-if [ -f ~/.bash-env-local ]; then
-  . ~/.bash-env-local
+if [ -f ~/.bash_env_local ]; then
+  . ~/.bash_env_local
 fi
 
-if [ -f ~/.bash-alias-local ]; then
+if [ -f ~/.bash_alias_local ]; then
   . ~/.bash-alias-local
 fi
 
