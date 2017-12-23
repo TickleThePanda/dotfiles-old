@@ -36,5 +36,7 @@ mkdir ~/.vim/undo
 
 ln -sfv "$DOTFILES_DIR/config/git" ~/.config/
 
+ln -sfv "$DOTFILES_DIR/config/tmux/tmux.conf" ~/.tmux.conf
+
 vim +PluginInstall +qall
 
