@@ -3,3 +3,4 @@ if hash powershell 2>/dev/null; then
 else
   ./fonts/install.sh
 fi
+
