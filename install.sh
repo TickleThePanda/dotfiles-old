@@ -28,7 +28,6 @@ ln -sfv "$DOTFILES_DIR/Xresources/Xresources" ~/.Xresources
 
 mkdir ~/.config
 
-ln -sfv "$DOTFILES_DIR/config/awesome" ~/.config/
 ln -sfv "$DOTFILES_DIR/config/tty-solarized" ~/.config/
 
 ln -sfv "$DOTFILES_DIR/config/vim/vimrc" ~/.vimrc
