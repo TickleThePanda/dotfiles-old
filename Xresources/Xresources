@@ -1,12 +1,12 @@
 XTerm*locale: true
 XTerm*utf8: 1
 XTerm*faceName: Source Code Pro for Powerline
-XTerm*faceSize: 10
+XTerm*faceSize: 9
 
 UXTerm*locale: true
 UXTerm*utf8: 1
 UXTerm*faceName: Source Code Pro for Powerline
-UXTerm*faceSize: 10
+UXTerm*faceSize: 9
 
 #define S_base03        #002b36
 #define S_base02        #073642
