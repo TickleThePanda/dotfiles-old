@@ -1,3 +1,4 @@
+
 [[ $- == *i* ]] || return
 
 if [ -f ~/.bash_alias ]; then
@@ -32,6 +33,8 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval `ssh-agent -s`
   ssh-add
 fi
+
+eval `dircolors ~/.dircolors.ansi-dark`
 
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"

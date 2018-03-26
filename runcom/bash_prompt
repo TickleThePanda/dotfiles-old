@@ -1,5 +1,5 @@
 
-PS1="[\u@\h \W]\$ "
+PS1="\e[90m[\u@\h \W]\e[0m\$ \e[37m"
 
 source ~/.bash-git-prompt/gitprompt.sh
 GIT_PROMPT_ONLY_IN_REPO=1

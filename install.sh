@@ -37,5 +37,7 @@ ln -sfv "$DOTFILES_DIR/config/git" ~/.config/
 
 ln -sfv "$DOTFILES_DIR/config/tmux/tmux.conf" ~/.tmux.conf
 
+ln -sfv "$DOTFILES_DIR/config/dircolors/.dircolors.ansi-dark" ~/.dircolors.ansi-dark
+
 vim +PluginInstall +qall
 
