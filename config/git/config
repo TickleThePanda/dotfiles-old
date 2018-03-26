@@ -27,6 +27,7 @@
   hooksPath = ~/.gitconfig.d/hooks
   commentchar = $
   whitespace = blank-at-eol,blank-at-eof,space-before-tab,indent-with-none-tab,tab-in-indent
+  eol = lf
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
@@ -36,3 +37,5 @@
 
 [merge]
 	conflictstyle = diff3
+[filter "trimWhitespace"]
+	clean = git-stripspace
