@@ -18,7 +18,7 @@ if [ -f ~/.bash_env_local ]; then
 fi
 
 if [ -f ~/.bash_alias_local ]; then
-  . ~/.bash-alias-local
+  . ~/.bash_alias_local
 fi
 
 if [ -f ~/.git-completion ]; then
