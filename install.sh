@@ -18,11 +18,13 @@ wget -O ~/.git-completion https://raw.githubusercontent.com/git/git/master/contr
 
 # linking files
 
-ln -sfv "$DOTFILES_DIR/runcom/bashrc" ~/.bashrc
-ln -sfv "$DOTFILES_DIR/runcom/bash_alias" ~/.bash_alias
-ln -sfv "$DOTFILES_DIR/runcom/bash_profile" ~/.bash_profile
-ln -sfv "$DOTFILES_DIR/runcom/bash_env" ~/.bash_env
-ln -sfv "$DOTFILES_DIR/runcom/bash_prompt" ~/.bash_prompt
+ln -sfv "$DOTFILES_DIR/runcom/bash/rc" ~/.bashrc
+ln -sfv "$DOTFILES_DIR/runcom/bash/profile" ~/.bash_profile
+ln -sfv "$DOTFILES_DIR/runcom/bash/alias" ~/.alias
+ln -sfv "$DOTFILES_DIR/runcom/bash/env" ~/.env
+ln -sfv "$DOTFILES_DIR/runcom/bash/prompt" ~/.bash_prompt
+
+ln -sfv "$DOTFILES_DIR/runcom/zsh/rc" ~/.zshrc
 
 ln -sfv "$DOTFILES_DIR/Xresources/Xresources" ~/.Xresources
 
