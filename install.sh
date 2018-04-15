@@ -18,24 +18,28 @@ wget -O ~/.git-completion https://raw.githubusercontent.com/git/git/master/contr
 
 # linking files
 
-ln -sfv "$DOTFILES_DIR/runcom/bash_aliases" ~/.bash_aliases
-ln -sfv "$DOTFILES_DIR/runcom/bash_profile" ~/.bash_profile
-ln -sfv "$DOTFILES_DIR/runcom/bashrc" ~/.bashrc
-ln -sfv "$DOTFILES_DIR/runcom/env" ~/.env
-ln -sfv "$DOTFILES_DIR/runcom/prompt" ~/.prompt
-ln -sfv "$DOTFILES_DIR/runcom/profile" ~/.profile
+ln -sfv "$DOTFILES_DIR/runcom/bash/rc" ~/.bashrc
+ln -sfv "$DOTFILES_DIR/runcom/bash/profile" ~/.bash_profile
+ln -sfv "$DOTFILES_DIR/runcom/bash/alias" ~/.alias
+ln -sfv "$DOTFILES_DIR/runcom/bash/env" ~/.env
+ln -sfv "$DOTFILES_DIR/runcom/bash/prompt" ~/.bash_prompt
+
+ln -sfv "$DOTFILES_DIR/runcom/zsh/rc" ~/.zshrc
 
 ln -sfv "$DOTFILES_DIR/Xresources/Xresources" ~/.Xresources
 
 mkdir ~/.config
 
-ln -sfv "$DOTFILES_DIR/config/awesome" ~/.config/
 ln -sfv "$DOTFILES_DIR/config/tty-solarized" ~/.config/
 
 ln -sfv "$DOTFILES_DIR/config/vim/vimrc" ~/.vimrc
 mkdir ~/.vim/undo
 
 ln -sfv "$DOTFILES_DIR/config/git" ~/.config/
+
+ln -sfv "$DOTFILES_DIR/config/tmux/tmux.conf" ~/.tmux.conf
+
+ln -sfv "$DOTFILES_DIR/config/dircolors/.dircolors.ansi-dark" ~/.dircolors.ansi-dark
 
 vim +PluginInstall +qall
 

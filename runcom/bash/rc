@@ -1,0 +1,41 @@
+
+[[ $- == *i* ]] || return
+
+if [ -f ~/.alias ]; then
+  . ~/.alias
+fi
+
+if [ -f ~/.env ]; then
+  . ~/.env
+fi
+
+if [ -f ~/.bash_prompt ]; then
+  . ~/.bash_prompt
+fi
+
+if [ -f ~/.env_local ]; then
+  . ~/.env_local
+fi
+
+if [ -f ~/.alias_local ]; then
+  . ~/.alias_local
+fi
+
+if [ -f ~/.git-completion ]; then
+  . ~/.git-completion
+fi
+
+if [ -f ~/.config/tty-solarized/tty-solarized-dark.sh ]; then
+   source ~/.config/tty-solarized/tty-solarized-dark.sh
+fi
+
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
+
+eval `dircolors ~/.dircolors.ansi-dark`
+
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
+

@@ -17,7 +17,7 @@ Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 
-filetype plugin indent on
+filetype plugin on
 
 "airline
 let g:airline_theme='solarized'
