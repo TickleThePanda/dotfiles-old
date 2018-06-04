@@ -6,7 +6,7 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 git clone git@github.com:magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim --depth=1
 
 wget -O ~/.git-completion https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
@@ -18,11 +18,13 @@ wget -O ~/.git-completion https://raw.githubusercontent.com/git/git/master/contr
 
 # linking files
 
-ln -sfv "$DOTFILES_DIR/runcom/bashrc" ~/.bashrc
-ln -sfv "$DOTFILES_DIR/runcom/bash_alias" ~/.bash_alias
-ln -sfv "$DOTFILES_DIR/runcom/bash_profile" ~/.bash_profile
-ln -sfv "$DOTFILES_DIR/runcom/bash_env" ~/.bash_env
-ln -sfv "$DOTFILES_DIR/runcom/bash_prompt" ~/.bash_prompt
+ln -sfv "$DOTFILES_DIR/runcom/bash/rc" ~/.bashrc
+ln -sfv "$DOTFILES_DIR/runcom/bash/profile" ~/.bash_profile
+ln -sfv "$DOTFILES_DIR/runcom/bash/alias" ~/.alias
+ln -sfv "$DOTFILES_DIR/runcom/bash/env" ~/.env
+ln -sfv "$DOTFILES_DIR/runcom/bash/prompt" ~/.bash_prompt
+
+ln -sfv "$DOTFILES_DIR/runcom/zsh/rc" ~/.zshrc
 
 ln -sfv "$DOTFILES_DIR/Xresources/Xresources" ~/.Xresources
 
