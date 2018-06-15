@@ -1,6 +1,5 @@
 [user]
-  name = Thomas 'Panda' Attwood | TickleThePanda
-  email = thomas.pg.attwood@gmail.com
+  useConfigOnly = true
 [alias]
   # ---- shorthand ----
   s = status
@@ -21,6 +20,9 @@
   show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
   list-detached-commits = "!git fsck --lost-found | grep commit | awk '{print $3}' | xargs -I \"{}\" git --no-pager show -s --format=\"%aI - %H - %s\" \"{}\" | sort"
   exclude = !sh -c \"echo \"$1\" >> $(git rev-parse --show-cdup).git/info/exclude\" -
+  edit-branch = "!git rebase -i $(git merge-base develop $(git rev-parse HEAD))"
+
+  setup-user = "!f() { if [ $# -eq 0 ] ; then echo \"error: please provide the name of the user\" ; exit 1 ; fi ; git config --local user.name \"$(git config --get users.$1.name)\" ; git config --local user.email \"$(git config --get users.$1.email)\" ; }; f "
 
 [core]
   autocrlf = input
@@ -39,3 +41,13 @@
 	conflictstyle = diff3
 [filter "trimWhitespace"]
 	clean = git-stripspace
+[diff]
+	tool = vimdiff
+
+[users "personal"]
+  name = Panda (Thomas) Attwood | TickleThePanda
+  email = thomas.pg.attwood@gmail.com
+[users "work"]
+  name = Panda (Thomas) Attwood
+  email = thomas.attwood@stfc.ac.uk
+
