@@ -90,3 +90,4 @@ set expandtab
 set undodir=$HOME/.vim/undo
 set undofile
 
+set viminfo='20,<1000,s1000
