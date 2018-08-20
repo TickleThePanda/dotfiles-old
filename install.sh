@@ -31,7 +31,8 @@ ln -sfv "$DOTFILES_DIR/runcom/zsh/rc" ~/.zshrc
 
 ## other
 
-ln -sfv "$DOTFILES_DIR/Xresources/Xresources" ~/.Xresources
+ln -sfv "$DOTFILES_DIR/X/settings" ~/.Xresources
+ln -sfv "$DOTFILES_DIR/X/settings" ~/.Xdefaults
 
 mkdir ~/.config
 
