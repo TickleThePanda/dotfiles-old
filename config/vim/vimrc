@@ -90,6 +90,8 @@ set expandtab
 set undodir=$HOME/.vim/undo
 set undofile
 
+set viminfo='20,<1000,s1000
+
 highlight ColorColumn ctermbg=7
 set cc=72
 
