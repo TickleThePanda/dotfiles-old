@@ -1,4 +1,0 @@
-alias g='git'
-alias work='ssh panda@d.ticklethepanda.co.uk -t "tmux attach || tmux new-session"'
-alias ls='ls --color=auto'
-

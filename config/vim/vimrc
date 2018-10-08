@@ -92,8 +92,14 @@ set undofile
 
 set viminfo='20,<1000,s1000
 
+set wrap!
+
 highlight ColorColumn ctermbg=7
-set cc=72
+
+set spelllang=en_gb
+
+au FileType markdown setl cc=72 tw=72
+au FileType markdown setl spell
 
 autocmd FileType markdown setlocal cc=72 tw=72
 

@@ -1,0 +1,38 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/home/panda/.oh-my-zsh
+
+ZSH_THEME="agnoster"
+
+HIST_STAMPS="yyyy-mm-dd"
+
+plugins=(
+  git
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+if [ -f ~/.alias ]; then
+  . ~/.alias
+fi
+
+if [ -f ~/.env ]; then
+  . ~/.env
+fi
+
+if [ -f ~/.env_local ]; then
+  . ~/.env_local
+fi
+
+if [ -f ~/.alias_local ]; then
+  . ~/.alias_local
+fi
+
+export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
+

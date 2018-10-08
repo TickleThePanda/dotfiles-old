@@ -1,12 +1,20 @@
-XTerm*locale: true
-XTerm*utf8: 1
-XTerm*faceName: Source Code Pro for Powerline
-XTerm*faceSize: 9
+URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.transparent:          false
+URxvt.fading:               0
+URxvt.loginShell:           true
+URxvt.saveLines:            50
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
 
-UXTerm*locale: true
-UXTerm*utf8: 1
-UXTerm*faceName: Source Code Pro for Powerline
-UXTerm*faceSize: 9
+URxvt.font: xft:Source\ Code\ Pro\ Medium:antialias=true:hinting=true:size=9
+URxvt.boldFont: xft:Source\ Code\ Pro\ Medium:antialias=true:hinting=true:size=9
+
+URxvt.letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
 
 #define S_base03        #002b36
 #define S_base02        #073642
