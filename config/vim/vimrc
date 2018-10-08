@@ -95,3 +95,5 @@ set viminfo='20,<1000,s1000
 highlight ColorColumn ctermbg=7
 set cc=72
 
+autocmd FileType markdown setlocal cc=72 tw=72
+
