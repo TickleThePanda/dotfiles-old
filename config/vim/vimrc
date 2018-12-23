@@ -14,6 +14,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'powerline/fonts'
 Plugin 'scrooloose/syntastic'
+Plugin 'chrisbra/unicode.vim'
 
 call vundle#end()
 
