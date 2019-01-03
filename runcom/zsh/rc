@@ -36,6 +36,10 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
   ssh-add
 fi
 
-
 # added by travis gem
 [ -f /home/panda/.travis/travis.sh ] && source /home/panda/.travis/travis.sh
+
+eval `dircolors ~/.dircolors.ansi-dark`
+
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
