@@ -8,6 +8,8 @@ git clone git@github.com:magicmonty/bash-git-prompt.git ~/.bash-git-prompt --dep
 
 git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim --depth=1
 
+git clone git@gitlab.com:TickleThePanda/reviewing-stats.git ~/lib/reviewing-stats --depth=1
+
 wget -O ~/.git-completion https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
 (

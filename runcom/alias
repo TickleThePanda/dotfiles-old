@@ -1,4 +1,6 @@
 alias g='git'
 alias work='ssh panda@d.ticklethepanda.co.uk -t "tmux -u attach || tmux -u new-session"'
 alias ls='ls --color=auto'
+alias reviewing-stats='node /home/panda/lib/reviewing-stats/index.js'
+alias what-to-review='node /home/panda/lib/what-to-review/index.js'
 
