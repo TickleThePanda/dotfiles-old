@@ -41,3 +41,6 @@ eval `dircolors ~/.dircolors.ansi-dark`
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
+
+# added by travis gem
+[ -f /home/panda/.travis/travis.sh ] && source /home/panda/.travis/travis.sh
