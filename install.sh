@@ -43,6 +43,8 @@ ln -sfv "$DOTFILES_DIR/config/tty-solarized" ~/.config/
 ln -sfv "$DOTFILES_DIR/config/vim/vimrc" ~/.vimrc
 mkdir ~/.vim/undo
 
+ln -sfv "$DOTFILES_DIR/config/npm/npmrc" ~/.npmrc
+
 ln -sfv "$DOTFILES_DIR/config/git" ~/.config/
 
 ln -sfv "$DOTFILES_DIR/config/tmux/tmux.conf" ~/.tmux.conf
