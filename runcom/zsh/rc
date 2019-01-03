@@ -36,3 +36,7 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
   ssh-add
 fi
 
+eval `dircolors ~/.dircolors.ansi-dark`
+
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
