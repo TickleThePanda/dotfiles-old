@@ -102,3 +102,5 @@ set spelllang=en_gb
 au FileType markdown setl cc=72 tw=72
 au FileType markdown setl spell
 
+set title
+
