@@ -3,6 +3,10 @@ export ZSH=/home/panda/.oh-my-zsh
 
 ZSH_THEME="agnoster"
 
+prompt_dir() {
+  prompt_segment blue black '%2~'
+}
+
 HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(
