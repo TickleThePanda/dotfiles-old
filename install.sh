@@ -10,6 +10,8 @@ git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim --dep
 
 wget -O ~/.git-completion https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
+mkdir -p $ZSH_CUSTOM/themes && curl https://raw.githubusercontent.com/igormp/Imp/master/imp.zsh-theme -L -o $ZSH_CUSTOM/themes/imp.zsh-theme
+
 (
   cd $DOTFILES_DIR
   git pull --recurse-submodules
