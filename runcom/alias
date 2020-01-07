@@ -1,15 +1,5 @@
-release-notes () {
-
-	GITHUB_REPO=$(git config --get remote.origin.url | sed -n 's/^.*:\(.*\).git$/\1/p')
-
-  git fetch
-
-	git log --merges --pretty=format:%s ...origin/master \
-			| sed -n 's/^Merge pull request.*isisbusapps\/\([0-9][0-9]*\).*/\1/p' \
-			| sort -un \
-			| xargs -I {} -n1 curl -su TickleThePanda:$GITHUB_API_TOKEN https://api.github.com/repos/$GITHUB_REPO/issues/{} \
-			| jq -r '(.number|tostring) + " - " + .title + " - [" + (["\"" + .labels[]?.name + "\""] | join(", ")) + "]"'
-
+closed-since-last-release() {
+  git log --merges --pretty=format:%s origin/master
 }
 
 get-pom-versions () {
@@ -19,7 +9,5 @@ get-pom-versions () {
 alias g='git'
 alias work='ssh panda@d.ticklethepanda.co.uk -t "tmux -u attach || tmux -u new-session"'
 alias ls='ls --color=auto'
-alias reviewing-stats='node /home/panda/lib/reviewing-stats/index.js'
-alias what-to-review='node /home/panda/lib/what-to-review/index.js'
 
 
