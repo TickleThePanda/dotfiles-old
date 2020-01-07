@@ -23,6 +23,11 @@ mkdir -p $ZSH_CUSTOM/themes && curl https://raw.githubusercontent.com/igormp/Imp
 ln -sfv "$DOTFILES_DIR/runcom/alias" ~/.alias
 ln -sfv "$DOTFILES_DIR/runcom/env" ~/.env
 
+# scripts
+mkdir ~/.bin/
+ln -sfv "$DOTFILES_DIR/scripts/Extract-Times.ps1" ~/.bin/Extract-Times.ps1
+ln -syv "$DOTFILES_DIR/scripts/timesheets.js" ~/.bin/timesheets
+
 ## bash
 ln -sfv "$DOTFILES_DIR/runcom/bash/rc" ~/.bashrc
 ln -sfv "$DOTFILES_DIR/runcom/bash/profile" ~/.bash_profile

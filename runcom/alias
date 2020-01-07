@@ -10,4 +10,5 @@ alias g='git'
 alias work='ssh panda@d.ticklethepanda.co.uk -t "tmux -u attach || tmux -u new-session"'
 alias ls='ls --color=auto'
 
+alias ts="powershell.exe -File $HOME/.bin/Extract-Times.ps1 | timesheet"
 
