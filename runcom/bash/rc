@@ -30,8 +30,7 @@ if [ -f ~/.config/tty-solarized/tty-solarized-dark.sh ]; then
 fi
 
 if [ -z "$SSH_AUTH_SOCK" ] ; then
-  eval `ssh-agent -s`
-  ssh-add
+  { eval `ssh-agent -s`; ssh-add } &>/dev/null
 fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
