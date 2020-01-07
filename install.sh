@@ -37,23 +37,19 @@ ln -sfv "$DOTFILES_DIR/runcom/bash/prompt" ~/.bash_prompt
 ln -sfv "$DOTFILES_DIR/runcom/zsh/rc" ~/.zshrc
 
 ## other
-
 ln -sfv "$DOTFILES_DIR/X/settings" ~/.Xresources
 ln -sfv "$DOTFILES_DIR/X/settings" ~/.Xdefaults
 
+## config
 mkdir ~/.config
-
 ln -sfv "$DOTFILES_DIR/config/tty-solarized" ~/.config/
-
 ln -sfv "$DOTFILES_DIR/config/vim/vimrc" ~/.vimrc
+
 mkdir ~/.vim/undo
 
 ln -sfv "$DOTFILES_DIR/config/npm/npmrc" ~/.npmrc
-
 ln -sfv "$DOTFILES_DIR/config/git" ~/.config/
-
 ln -sfv "$DOTFILES_DIR/config/tmux/tmux.conf" ~/.tmux.conf
-
 ln -sfv "$DOTFILES_DIR/config/dircolors/.dircolors.ansi-dark" ~/.dircolors.ansi-dark
 
 vim +PluginInstall +qall
