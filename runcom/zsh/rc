@@ -43,6 +43,18 @@ fi
 # added by travis gem
 [ -f /home/panda/.travis/travis.sh ] && source /home/panda/.travis/travis.sh
 
+# nvm
+[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
+if [ -f /usr/share/nvm/nvm.sh ]; then
+  source /usr/share/nvm/nvm.sh
+fi
+if [ -f /usr/share/nvm/bash_completion ]; then
+  source /usr/share/nvm/bash_completion
+fi
+if [ -f /usr/share/nvm/install-nvm-exec ]; then
+  source /usr/share/nvm/install-nvm-exec
+fi
+
 eval `dircolors ~/.dircolors.ansi-dark`
 
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
