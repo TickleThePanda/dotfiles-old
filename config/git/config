@@ -31,9 +31,10 @@
   whitespace = blank-at-eol,blank-at-eof,space-before-tab,indent-with-none-tab,tab-in-indent
   eol = lf
 [filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
   required = true
+  process = git-lfs filter-process
 [push]
   default = current
 
