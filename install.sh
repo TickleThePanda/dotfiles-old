@@ -8,9 +8,9 @@ git clone git@github.com:magicmonty/bash-git-prompt.git ~/.bash-git-prompt --dep
 
 git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim --depth=1
 
-git clone git@gitlab.com:TickleThePanda/reviewing-stats.git ~/lib/reviewing-stats --depth=1
-
 wget -O ~/.git-completion https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+
+mkdir -p $ZSH_CUSTOM/themes && curl https://raw.githubusercontent.com/igormp/Imp/master/imp.zsh-theme -L -o $ZSH_CUSTOM/themes/imp.zsh-theme
 
 (
   cd $DOTFILES_DIR
@@ -23,6 +23,11 @@ wget -O ~/.git-completion https://raw.githubusercontent.com/git/git/master/contr
 ln -sfv "$DOTFILES_DIR/runcom/alias" ~/.alias
 ln -sfv "$DOTFILES_DIR/runcom/env" ~/.env
 
+# scripts
+mkdir ~/.bin/
+ln -sfv "$DOTFILES_DIR/scripts/Extract-Times.ps1" ~/.bin/Extract-Times.ps1
+ln -syv "$DOTFILES_DIR/scripts/timesheets.js" ~/.bin/timesheets
+
 ## bash
 ln -sfv "$DOTFILES_DIR/runcom/bash/rc" ~/.bashrc
 ln -sfv "$DOTFILES_DIR/runcom/bash/profile" ~/.bash_profile
@@ -32,23 +37,19 @@ ln -sfv "$DOTFILES_DIR/runcom/bash/prompt" ~/.bash_prompt
 ln -sfv "$DOTFILES_DIR/runcom/zsh/rc" ~/.zshrc
 
 ## other
-
 ln -sfv "$DOTFILES_DIR/X/settings" ~/.Xresources
 ln -sfv "$DOTFILES_DIR/X/settings" ~/.Xdefaults
 
+## config
 mkdir ~/.config
-
 ln -sfv "$DOTFILES_DIR/config/tty-solarized" ~/.config/
-
 ln -sfv "$DOTFILES_DIR/config/vim/vimrc" ~/.vimrc
+
 mkdir ~/.vim/undo
 
 ln -sfv "$DOTFILES_DIR/config/npm/npmrc" ~/.npmrc
-
 ln -sfv "$DOTFILES_DIR/config/git" ~/.config/
-
 ln -sfv "$DOTFILES_DIR/config/tmux/tmux.conf" ~/.tmux.conf
-
 ln -sfv "$DOTFILES_DIR/config/dircolors/.dircolors.ansi-dark" ~/.dircolors.ansi-dark
 
 vim +PluginInstall +qall

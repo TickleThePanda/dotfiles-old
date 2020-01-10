@@ -44,6 +44,7 @@
 	clean = git-stripspace
 [diff]
 	tool = vimdiff
+  colormoved = default
 
 [users "personal"]
   name = Panda (Thomas) Attwood | TickleThePanda

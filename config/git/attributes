@@ -1,0 +1,2 @@
+**/*.wsdl    diff=nodiff
+**/*.xsd     diff=nodiff
