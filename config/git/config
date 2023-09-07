@@ -47,9 +47,13 @@
   colormoved = default
 
 [users "personal"]
-  name = Panda (Thomas) Attwood | TickleThePanda
-  email = thomas.pg.attwood@gmail.com
+  name = Panda Rushwood | TickleThePanda
+  email = panda@ticklethepanda.dev
 [users "work"]
-  name = Panda (Thomas) Attwood
-  email = thomas.attwood@stfc.ac.uk
+  name = Panda Rushwood
+  email = panda@energyandcleanair.org
 
+[init]
+	defaultBranch = main
+[credential]
+	helper = cache
